@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Imc</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <main class="card">
+        <h1 class="title">Cálculo de IMC</h1>
+        <form>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" id="weight" placeholder="60" />
+          </div>
+          <div class="input-wrapper">
+            <label for="height">Altura (cm)</label>
+            <input type="text" id="height" placeholder="165" />
+
+            <button type="submit" id="open-popout">
+              Calcular IMC
+              <img src="assets/arrow.svg" alt="seta" />
+            </button>
+          </div>
+        </form>
+      </main>
+
+      <div id="modal-wrapper">
+        <div id="popout">
+          <p id="result"></p>
+          <button
+            id="close-popout"
+            style="position: absolute; right: 0; top: 0"
+          >
+            x
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert-error">Digite somente números...</div>
+  </body>
+</html>
