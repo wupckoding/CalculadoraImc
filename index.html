@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <script src="index.js" defer></script>
+    <script src="/js/index.js" defer type="module"></script>
   </head>
   <body>
     <div class="container">
@@ -22,11 +22,11 @@
         <form>
           <div class="input-wrapper">
             <label for="weight">Peso (kg)</label>
-            <input type="text" id="weight" placeholder="60" />
+            <input type="number" id="weight" placeholder="60" />
           </div>
           <div class="input-wrapper">
             <label for="height">Altura (cm)</label>
-            <input type="text" id="height" placeholder="165" />
+            <input type="number" id="height" placeholder="165" />
 
             <button type="submit" id="open-popout">
               Calcular IMC
@@ -49,6 +49,6 @@
       </div>
     </div>
 
-    <div class="alert-error">Digite somente números...</div>
+    <div class="alert-error">Preencha os campos com números...</div>
   </body>
 </html>
